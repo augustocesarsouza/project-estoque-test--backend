@@ -10,7 +10,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")  // Aplica CORS a todas as rotas
-                .allowedOrigins("https://project-estoque-test-production.up.railway.app")  // URL do seu frontend
+                .allowedOrigins("https://project-estoque-test-production.up.railway.app/5052")  // URL do seu frontend
                 .allowedMethods("GET", "POST", "PUT", "DELETE")  // Métodos permitidos
                 .allowedHeaders("*")  // Permite todos os headers
                 .allowCredentials(false);  // Se você precisar de cookies ou credenciais
