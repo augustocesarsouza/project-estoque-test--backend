@@ -14,7 +14,7 @@ public class MyConfiguration implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")  // Aplica CORS a todas as rotas
                 .allowedOrigins(frontendUrl) // URL do seu frontend
-                .allowedMethods("GET", "POST", "PUT", "DELETE")  // Métodos permitidos
+                .allowedMethods("GET", "POST", "PUT", "DELETE", "HEAD", "OPTIONS") // Métodos permitidos
                 .allowedHeaders("*")  // Permite todos os headers
                 .allowCredentials(false);  // Se você precisar de cookies ou credenciais
     }
