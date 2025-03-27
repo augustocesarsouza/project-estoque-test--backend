@@ -41,7 +41,6 @@ public class UserManagementService implements IUserManagementService {
         if(userDTO == null)
             return ResultService.Fail("error DTO Is Null");
 
-
         try {
             UUID uuid_user_id = UUID.randomUUID();
 

@@ -32,7 +32,7 @@ public class UserController {
     }
 
     @PostMapping("/public/user/create")
-    public ResponseEntity<ResultService<UserDTO>> Create(UserDTO userDTO){
+    public ResponseEntity<ResultService<UserDTO>> Create(@RequestBody UserDTO userDTO){
         var result = userManagementService.create(userDTO);
 
         if(result.IsSuccess){
