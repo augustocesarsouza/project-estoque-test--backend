@@ -90,6 +90,30 @@
 			<artifactId>cloudinary-http44</artifactId>
 			<version>1.36.0</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.twilio.sdk</groupId>
+			<artifactId>twilio</artifactId>
+			<version>10.6.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.sendinblue</groupId>
+			<artifactId>sib-api-v3-sdk</artifactId>
+			<version>7.0.0</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.squareup.okio</groupId>
+					<artifactId>okio</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>com.squareup.okio</groupId>
+			<artifactId>okio</artifactId>
+			<version>3.8.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -111,11 +135,6 @@
 				<groupId>org.flywaydb</groupId>
 				<artifactId>flyway-maven-plugin</artifactId>
 				<version>9.22.3</version>
-				<configuration>
-					<url>jdbc:postgresql://localhost:5438/postgres</url>
-					<user>postgresEstoque</user>
-					<password>Postgre12345Estoque</password>
-				</configuration>
 			</plugin>
 
 			<plugin>
