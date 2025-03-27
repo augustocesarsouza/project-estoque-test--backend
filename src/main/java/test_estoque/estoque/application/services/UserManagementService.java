@@ -2,6 +2,7 @@ package test_estoque.estoque.application.services;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import test_estoque.estoque.application.dto.UserDTO;
 import test_estoque.estoque.application.services.interfaces.IUserManagementService;
 import test_estoque.estoque.domain.entities.User;
@@ -9,6 +10,7 @@ import test_estoque.estoque.domain.repositories.IUserRepository;
 
 import java.util.UUID;
 
+@Service
 public class UserManagementService implements IUserManagementService {
     private final IUserRepository userRepository;
     private final ModelMapper modelMapper;
